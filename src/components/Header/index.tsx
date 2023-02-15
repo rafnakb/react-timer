@@ -1,5 +1,5 @@
 import { HeaderContainer } from "./styles";
-import appLogo from '../../assets/johndeere.svg';
+import appLogo from '../../assets/linux.png';
 import { Scroll, Timer } from "phosphor-react";
 import { NavLink } from "react-router-dom";
 
