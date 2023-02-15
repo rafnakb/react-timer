@@ -5,10 +5,23 @@ import { GlobalStyles } from "./styles/global";
 import { defaultTheme } from "./styles/themes/default";
 import { createBrowserRouter, RouterProvider, } from 'react-router-dom';
 import { History } from "./pages/History";
+import { DefaultLayout } from "./layouts/DefaultLayout";
 
 const router = createBrowserRouter([
-  { path: '/', element: <Home /> },
-  { path: '/history', element: <History /> }
+  {
+    path: '/',
+    element: <DefaultLayout />,
+    children: [
+      {
+        path: '/',
+        element: <Home />
+      },
+      {
+        path: '/history',
+        element: <History />
+      }
+    ]
+  },
 ]);
 
 export function App() {
