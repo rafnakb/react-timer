@@ -53,8 +53,17 @@ setCycles((state) => [...state, newCycle])
 - Executado quando há alteração na variável de dependência
 - Se o useEffect está precisando atualizar o estado de forma síncrona, é possível que não esteja corretamente feito uso.
 
+### React Hook Form
+
 ### Conext API
+- createContext, useContext
 - Permite compartilhar informações entre vários componentes ao mesmo tempo
+- Os dados para serem obtidos por contexto devem estar em seu componente pai para ser acessados pelos filhos
+<CyclesContext.Provider value={ {objeto} } />
+
+### Reducer
+- useReucer
+- Armazenar uma informação e alterar no futuro
 
 ---
 
@@ -62,3 +71,4 @@ setCycles((state) => [...state, newCycle])
 - Spread operadtor syntax (...)
 - Pomodoro
 - Prop Drilling: muitas props apenas para comunicação entre componentes
+- Operador "&&": if then (não possui o else)
