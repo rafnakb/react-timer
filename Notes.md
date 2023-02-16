@@ -52,8 +52,13 @@ setCycles((state) => [...state, newCycle])
 - Executa quando o componente é renderizado
 - Executado quando há alteração na variável de dependência
 - Se o useEffect está precisando atualizar o estado de forma síncrona, é possível que não esteja corretamente feito uso.
+
+### Conext API
+- Permite compartilhar informações entre vários componentes ao mesmo tempo
+
 ---
 
 # Estudar mais tarde
 - Spread operadtor syntax (...)
 - Pomodoro
+- Prop Drilling: muitas props apenas para comunicação entre componentes
