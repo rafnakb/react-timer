@@ -7,6 +7,14 @@ export const HistoryContainer = styled.main`
   display: flex;
   flex-direction: column;
 
+/* Clear button
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+*/
+
   h1 {
     font-size: 1.5rem;
     color: ${(props) => props.theme['gray-100']};
@@ -82,5 +90,18 @@ export const Status = styled.span<StatusProps>`
     height: 0.5rem;
     border-radius: 9999px;
     background-color: ${(props) => props.theme[STATUS_COLORS[props.statusColor]]};
+  }
+`;
+
+export const ClearButton = styled.button`
+  border: 0;
+  color: ${(props) => props.theme['gray-100']};
+  background-color: ${(props) => props.theme['red-500']};
+  border-radius: 8px;
+  padding: 0 0.5rem;
+
+  &:hover {
+    color: ${(props) => props.theme['gray-300']};
+    background-color: ${(props) => props.theme['red-700']};
   }
 `;

@@ -7,6 +7,7 @@ $ npm i react-router-dom
 $ npm i phosphor-react
 $ npm i @hookform/resolvers
 $ npm i date-fns
+$ npm i immer
 ```
 https://www.npmjs.com/package/styled-components
 https://reactrouter.com/en/main/start/tutorial
@@ -64,6 +65,10 @@ setCycles((state) => [...state, newCycle])
 ### Reducer
 - useReucer
 - Armazenar uma informação e alterar no futuro
+- Pattern para várias bibliotecas, contextos, etc.
+
+### Immer
+- Trabalhar com dados imutáveis
 
 ---
 
